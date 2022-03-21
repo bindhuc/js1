@@ -9,78 +9,76 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<ol>
-    <li>var ve let vs const</li>
-    <li>hoisting</li>
-    <li>temporal dead zone</li>
-</ol>
-<h1>var</h1>
-<ul>
-    <li>global or functional scope</li>
-    <li>var can be redeclared</li>
-    <li>can be modified</li>
-    <li>can be reassigned later</li>
+
+<h1>Javascript</h1>
+<h4>Javascript is used by programmers across the world to create dynamic
+     and interactive web content like applications and browsers</h4>
+     <hr>
+     <h1>Javascript engine</h1>
+     <h4> The JavaScript Engine is generally used for interpreting the JavaScript. 
+         It is used to interpret the javascript and execute the javscript on the web page.</h4>
+         <hr>
+         <h1>What is execution in js</h1>
+         <h4>
+            JavaScript engine executes the code line by line, assigns the values to variables, and executes the function calls
+         </h4>
+         <hr>
+         <h1>Run time environment</h1>
+         <h4>
+            The JavaScript runtime environment provides access to built-in libraries and 
+            objects that are available 
+            to a program so that it can interact with the outside world and make the code work 
+            
+<img src="./0_0WHvNqHCfpOtd4GB.png" alt="">
+         <h3>browser has following elements:</h3>
+         <ul>
+ <li> JavaScript engine </li>
+<li>Web APIs</li>
+<li> callback queue</li>
+<li>event loop</li>
 </ul>
-<h1>let</h1>
+<br>
+<h3> heap</h3>
+that is used for the allocation of objects and variables
+<h3> call stack</h3>
+The call stack is a data structure that keeps track of where we are in the program and runs in a last-in, first-out way.
+<h3> Web APIs</h3>
+Web APIs are not a part of the JavaScript engine, 
+but they are part of the runtime environment provided by the browser 
+<h3> callback queue</h3>  
+The callback queue stores the callback functions sent from the Web APIs in the order in which they were added.
+<h3>event loop</h3> 
+The job of the event loop is to constantly monitor the state of the call stack and the callback queue  
+
+<h3>Working</h3>
 <ul>
-    <li>block scoped</li>
-    <li>cannot redeclare</li>
-    <li>can be modified</li>
-    <li>cannot reassign</li>
-</ul>
-<h1>const</h1>
-<ul>
-    <li>block scoped</li>
-    <li>cannot redeclare</li>
-    <li>cannot reassign</li>
-    <li>cannot modify</li>
+<li> The runtime environment is what makes JavaScript code work, and in a browser in consists of the JS engine,
+ a lot of Web APIs, a callback queue and the event loop</li>
+<li> The JS engine translates source code into machine code that allows a computer
+ to perform specific tasks at the hardware level</li>
+<li> Web APIs extend the JS language and push callback functions to the callback queue once actions 
+are complete and data has been received</li>
+<li> The callback queue stores callback functions in order, ready to be executed</li>
+<li> The event loop is constantly monitoring the call stack and the callback queue;
+ if the call stack is empty it will move the callback function at the front of the queue 
+ to the call stack, scheduling it for execution</li>
+
 </ul>
 
-<table class="table">
-    <tr>
-        <th>var</th>
-        <th>let</th>
-        <th>const</th>
-        
-    </tr>
-    <tr>
-        <td>global or functional scope</td>
-        <td>block scoped</td>
-        <td>block scoped</td>
 
-        
-        
-        
-    </tr>
-    <tr>
-        <td>var can be redeclared</td>
-        <td>cannot redeclared</td>
-        <td>cannot redeclared</td>
-        
-        
-        
-    </tr>
-    <tr>
-       <td>can be modified</td> 
-       <td>can be modified</td> 
-        <td>cannot modified</td>
+</h4>
 
-        
-    </tr>
-    <tr>
-        <td>can be reassigned later</td>
-        <td>cannot reassigned </td>
-        <td>cannot reassigned later</td>
-    </tr>
-</table>
-<hr >
-<h1>HOISTING</h1>
-<h3>it is a default js mechanism where our variables and functions are moved to top of their scope before
-    execution only declaration are hosted
-</h3>
 <hr>
-<h1>TEMPORAL DEAD ZONE</h1>
-<h3>Time between the variables hosted and the variables get initialized</h3>
+
+
+
+
+
+
+
+
+
+
 
 
 
